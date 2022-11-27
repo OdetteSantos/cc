@@ -1,0 +1,42 @@
+body{
+    background: url("5.png");
+}
+
+
+.homeText{
+    text-align: center;
+}
+@font-face {
+    font-family: Alfa Slab One;
+    src: url(AlfaSlabOne-Regular.ttf);
+}
+#first, #second{
+    font-size: 6em;
+    font-family: Alfa Slab One;
+    padding-top: .75in;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: inline-block;
+}
+
+#first{
+    /* -webkit-text-fill-color: none;
+    -webkit-text-stroke: 50px, white; */
+    color: #E4D4C8;
+	text-shadow: -3px 3px 0 #A47551,
+				  3px 3px 0 #A47551,
+				 3px -3px 0 #A47551;
+                 -3px -3px 0 #A47551;
+}
+
+#second{
+    color: #A47551;
+}
+.homeText h6{
+    font-size: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
