@@ -7,18 +7,15 @@ body{
 
 .homeText{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
 }
-
-/* .homeBox{
-
-} */
 
 @font-face {
     font-family: Alfa Slab One;
     src: url(AlfaSlabOne-Regular.ttf);
 }
-#first, #second{
+
+.first{
     font-size: 5em;
     font-family: Alfa Slab One;
     padding-top: 1.5in;
@@ -26,23 +23,20 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
     display: inline-block;
-    /* transition: 2s ease; */
+    letter-spacing: 5px;
+
 }
 
-#first{
+.first1{
     color: #E4D4C8;
 	text-shadow: -2px 2px 0 #A47551,
 				  2px 2px 0 #A47551,
 				 2px -2px 0 #A47551,
                  -2px -2px 0 #A47551;
-    /* clip-path: polygon(0 0, 100% 0, 
-        100% 100%, 50% 0, 0 100%); */
 }
 
-#second{
+.second{
     color: #A47551;
-    /* clip-path: polygon(100% 100%, 100% 100%, 
-        100% 100%, 100% 100%, 100% 0%); */
 }
 
 #third{
@@ -54,13 +48,31 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
     display:flow-root;
-    /* animation: fade 2s 1s 1 right;; */
 }
 
-/* .homeBox:hover #first{
-    transform: translateY(-30px);
-}
-
-.homeBox:hover #second{
-    transform: translateY(30px);
-} */
+h1 span{
+    transition: .5s linear
+  }
+  h1:hover span:nth-child(1){
+    margin-right: 25px
+  }
+  h1:hover span:nth-child(2){
+    margin-right: 20px
+  }
+  h1:hover span:nth-child(3){
+    margin-right: 15px
+  }
+  h1:hover span:nth-child(4){
+    margin-right: 15px
+  }
+  h1:hover span:nth-child(5){
+    margin-left: 9px;
+  }
+  h1:hover span:nth-child(6){
+    margin-left: 20px
+  }
+  h1:hover span{
+    text-shadow: 0 0 10px #523A28,
+                 0 0 20px #523A28, 
+                 0 0 40px #523A28;
+  }
