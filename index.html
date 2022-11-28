@@ -7,23 +7,23 @@
         <title>
             Odette Santos
         </title>
-        <body>         
+        <body>
+<!--SIDEBAR-->
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+
+<!--HOME PAGE-->         
             <div class="homeText">
-                <div> 
-                    <!-- <h1 class="first first1"> ODE</h1> 
-                    <h1 class=" first second"> TTE</h1> -->
-                    <h1 class="first"><span class="first1">O</span><span class="first1">D</span><span class="first1">E</span><span class="second">T</span><span class="second">T</span><span class="second">E</span></h1>
-                    <h6 id="third">SANTOS</h6>
-                </div>
+                <h1 class="first"><span class="first1">O</span><span class="first1">D</span><span class="first1">E</span><span class="second">T</span><span class="second">T</span><span class="second">E</span></h1>
+                <h6 id="third"><span>S</span><span>A</span><span>N</span><span>T</span><span>O</span><span>S</span></h6>
             </div>
-            <div class="menu">
-                <!--Add menu icon here <h2></h2>-->
-                <menu>
-                    <a href="#Home">Home</a>
-                    <a href="#About">About</a>
-                    <a href="#Contact">Contact</a>
-                </menu>
-            </div>
+<!--ABOUT PAGE-->
             <div class="aboutContainer">
                 <div class="AboutText">
                     <p>Hi!</p>
@@ -36,6 +36,7 @@
                     <img src="3.png">
                 </div>
             </div>
+<!--CONTACT PAGE-->
             <div class="contactContainer">
                 <a href="#facebook"><img src="6.png" alt=""></a>
                 <a href="#gmail"><img src="7.png"></a>
@@ -43,6 +44,25 @@
                 <a href="#telegram"><img src="10.png"></a>
                 <a href="messenger"><img src="9.png"></a>
             </div>
+            <!-- </main> -->
+
+<!--JAVA-->
+<script>
+    let bool = false;
+function openNav() {
+  bool = !bool;
+  if (bool) {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.querySelector(".openbtn").innerHTML = "&times;";
+  } else {
+    document.getElementById("mySidebar").style.width = "0px";
+    document.getElementById("main").style.marginLeft = "0";
+    document.querySelector(".openbtn").innerHTML = "&#9776;";
+  }
+}
+
+    </script>
         </body>
     </head>
 </html>

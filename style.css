@@ -1,3 +1,11 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
+
+@font-face {
+    font-family: Alfa Slab One;
+    src: url(AlfaSlabOne-Regular.ttf);
+}
+
 body{
     background: url("5.png");
     background-repeat: no-repeat;
@@ -5,26 +13,21 @@ body{
     background-attachment: fixed;
 }
 
+/*design for the h1 and h6*/
 .homeText{
     text-align: center;
     font-size: 2em;
 }
-
-@font-face {
-    font-family: Alfa Slab One;
-    src: url(AlfaSlabOne-Regular.ttf);
-}
-
 .first{
     font-size: 5em;
     font-family: Alfa Slab One;
+    letter-spacing: 5px;
+    line-height: 1;
     padding-top: 1.5in;
     padding-bottom: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
     display: inline-block;
-    letter-spacing: 5px;
-
 }
 
 .first1{
@@ -41,8 +44,9 @@ body{
 
 #third{
     text-align: center;
-    font: size 25px;;
-    font-family: Arial, Helvetica, sans-serif;
+    font: size 100in;;
+    font-family: Playfair Display;
+    letter-spacing: 10px;
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
@@ -50,29 +54,98 @@ body{
     display:flow-root;
 }
 
-h1 span{
+.homeText span{
     transition: .5s linear
   }
-  h1:hover span:nth-child(1){
+  .homeText:hover span:nth-child(1){
     margin-right: 25px
   }
-  h1:hover span:nth-child(2){
+  .homeText:hover span:nth-child(2){
     margin-right: 20px
   }
-  h1:hover span:nth-child(3){
+  .homeText:hover span:nth-child(3){
     margin-right: 15px
   }
-  h1:hover span:nth-child(4){
+  .homeText:hover span:nth-child(4){
     margin-right: 15px
   }
-  h1:hover span:nth-child(5){
+  .homeText:hover span:nth-child(5){
     margin-left: 9px;
   }
-  h1:hover span:nth-child(6){
+  .homeText:hover span:nth-child(6){
     margin-left: 20px
   }
   h1:hover span{
-    text-shadow: 0 0 10px #523A28,
-                 0 0 20px #523A28, 
-                 0 0 40px #523A28;
+    text-shadow: 0 0 20px #523A28,
+                 0 0 30px #523A28, 
+                 0 0 50px #523A28;
   }
+
+
+   /* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: none;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 0px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #523A28;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #D0B49F;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 30px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #523A28;
+    opacity: 0.5;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 0 0 0;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  
