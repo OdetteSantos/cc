@@ -6,10 +6,11 @@
     src: url(AlfaSlabOne-Regular.ttf);
 }
 
-body{
+html{
     background: url("5.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-height: auto;
     background-attachment: fixed;
 }
 
@@ -98,9 +99,9 @@ body{
   
   /* The sidebar links */
   .sidebar a {
-    padding: 8px 0px 8px 10px;
+    padding: 5px 5px 5px 5px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #523A28;
     display: block;
     transition: 0.3s;
@@ -111,12 +112,15 @@ body{
     color: #D0B49F;
   }
   
+  .sidebar a:active{
+    color: #A47551;
+  }
   /* Position and style the close button (top right corner) */
   .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 20px;
-    font-size: 36px;
+    font-size: 20px;
     margin-left: 30px;
   }
   
@@ -124,16 +128,16 @@ body{
   .openbtn{
     font-size: 20px;
     cursor: pointer;
-    background-color: #523A28;
+    background-color: #D0B49F;
     opacity: 0.5;
-    color: white;
-    padding: 5px 10px;
+    color: #523A28;
+    padding: 8px 8px;
     margin: 0 0 0 0;
     border: none;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: #444; /*color of the button when the cursor points*/
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -144,8 +148,40 @@ body{
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
+    .sidebar {padding-top: 0px;}
     .sidebar a {font-size: 18px;}
   }
 
-  
+  /*IMAGES CSS DESIGN*/
+  .aboutContainer{
+
+  }
+  .aboutText{
+
+  }
+  .aboutImagesCon{
+    background-color: #523A28;
+    border: 5px dashed black;
+    border-radius: 25px;
+    margin: 180px 10px 0px 750px; /*t, r, b, l*/
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    max-width: 1000px;
+    position: relative;
+  }
+
+ .img{
+    display:none;
+    position: center;
+    padding: 10px 10px 0px 20px;
+  } 
+
+  .fade{
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+  }
