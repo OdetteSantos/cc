@@ -1,0 +1,51 @@
+html{
+    background: url("5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-height: 100%;
+    background-attachment: fixed;
+}
+
+.contain{
+    display: inline-block;
+}
+
+#fb{
+    width: 50%;
+    height: 50%;
+    margin: 0 5cm 0cm 0cm;
+    padding: 0;
+    /* position: absolute; */
+}
+
+#gm{
+    width: 40%;
+    height: 40%;
+    margin: 0cm 4cm 0cm cm;
+    padding: 0;
+    /* position: absolute; */
+}
+
+#tg{
+    width: 30%;
+    height: 30%;
+    margin: 0 3cm 0cm 20cm;
+    padding: 0;
+    /* position: absolute; */
+}
+
+#ms{
+    width: 20%;
+    height: 20%;
+    margin: 0 2cm 0cm 10cm;
+    padding: 0 0;
+    /* position: absolute; */
+}
+
+#tw{
+    width: 10%;
+    height: 10%;
+    margin: 0 1cm 0cm 5cm;
+    padding: 0 0;
+    /* position: absolute; */
+}
