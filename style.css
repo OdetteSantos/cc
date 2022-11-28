@@ -1,42 +1,66 @@
 body{
     background: url("5.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
-
 
 .homeText{
     text-align: center;
+    font-size: 3em;
 }
+
+/* .homeBox{
+
+} */
+
 @font-face {
     font-family: Alfa Slab One;
     src: url(AlfaSlabOne-Regular.ttf);
 }
 #first, #second{
-    font-size: 6em;
+    font-size: 5em;
     font-family: Alfa Slab One;
-    padding-top: .75in;
+    padding-top: 1.5in;
     padding-bottom: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
     display: inline-block;
+    /* transition: 2s ease; */
 }
 
 #first{
-    /* -webkit-text-fill-color: none;
-    -webkit-text-stroke: 50px, white; */
     color: #E4D4C8;
-	text-shadow: -3px 3px 0 #A47551,
-				  3px 3px 0 #A47551,
-				 3px -3px 0 #A47551,
-                 -3px -3px 0 #A47551;
+	text-shadow: -2px 2px 0 #A47551,
+				  2px 2px 0 #A47551,
+				 2px -2px 0 #A47551,
+                 -2px -2px 0 #A47551;
+    /* clip-path: polygon(0 0, 100% 0, 
+        100% 100%, 50% 0, 0 100%); */
 }
 
 #second{
     color: #A47551;
+    /* clip-path: polygon(100% 100%, 100% 100%, 
+        100% 100%, 100% 100%, 100% 0%); */
 }
-.homeText h6{
-    font-size: 2rem;
-    padding-top: 0;
-    padding-bottom: 0;
+
+#third{
+    text-align: center;
+    font: size 25px;;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0%;
+    padding-bottom: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
+    display:flow-root;
+    /* animation: fade 2s 1s 1 right;; */
 }
+
+/* .homeBox:hover #first{
+    transform: translateY(-30px);
+}
+
+.homeBox:hover #second{
+    transform: translateY(30px);
+} */
