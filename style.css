@@ -6,6 +6,12 @@
     src: url(AlfaSlabOne-Regular.ttf);
 }
 
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+}
+
 html{
     background: url("5.png");
     background-repeat: no-repeat;
