@@ -1,104 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>
-            Odette Santos
-        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Odette Santos</title>
     </head>
     <body>
-    <div class=WebContainer>
-    <!--SIDEBAR-->
+        <!-- Home page -->
         <div id="Home">
-            <div id="main">
-                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <div class="homeContainer">
+                <div class="container">
+                    <h1 class="first"><span class="first1">O</span><span class="second">D</span><span class="first1">E</span><span class="second">T</span><span class="first1">T</span><span class="second">E</span></h1>
+                    <h6 class="third"><span>S</span><span>A</span><span>N</span><span>T</span><span>O</span><span>S</span></h6>
+                <div id="navContainer">
+                    <nav>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#EducBg">Educational Background</a></li>
+                        <!-- <li><a href="#futureGoals">Future Goals</a></li> -->
+                        <li><a href="#Contact">Contact</a></li>
+                    </nav>
+                </div>
             </div>
-            <div id="mySidebar" class="sidebar">
-                <a href="#Home" target="_self" >Home</a>
-                <a href="#About">About</a>
-                <a href="contact.html">Contact</a>
-             </div>
+        </div>
 
-    <!--HOME PAGE-->         
-        <div class="homeText">
-            <h1 class="first"><span class="first1">O</span><span class="first1">D</span><span class="first1">E</span><span class="second">T</span><span class="second">T</span><span class="second">E</span></h1>
-            <h6 id="third"><span>S</span><span>A</span><span>N</span><span>T</span><span>O</span><span>S</span></h6>
+        <!--Information about me -->
+        <div id="About">
+            <div class="about">
+                <!-- Content -->
+                <div class="textContainer">
+                    <h3>I am <span class="autoType"></span></h3>
+                    <section class="hobVid">
+                        <h4><span class="h4Ex">!</span>HOBBY<span class="h4Ex">!</span></h4>
+                        <video controls><source src="rukawa.mp4" type="video/ogg"></video>
+                    </section>
+                </div>
+                <!-- Pictures -->
+                <div class="pictureContainer">
+                    <div class="imgpic fade">
+                        <img src="odette1.jpg" alt="Image 1" width="100%">
+                    </div>
+                    <div class="imgpic fade">
+                        <img src="odette2.jpg" alt="Image 5" width="100%">
+                    </div>
+                    <div class="imgpic fade">
+                        <img src="school.jpg" alt="Image 3" width="100%">
+                    </div>
+                    <div class="imgpic fade">
+                        <img src="sj.jpg" alt="Image 4" width="100%">
+                    </div>
+                    <div class="imgpic fade">
+                        <img src="gym.jpg" alt="Image6" width="100%">
+                    </div>
+                </div>
+            </div>
         </div>
-    <!--ABOUT PAGE-->
-         <div id="About">
-            <div class="aboutContainer">
-                <div class="AboutText">
-                    <p auto="typeWriter()" id="anime">♥</p>
-                   </div>
-<!--                    <div class="aboutImagesCon">
-                       <div class="img fade"><img src="1.png" alt="Image 1"></div>
-                    <div class="img fade"><img src="2.png" alt="Image 2"></div>
-                    <div class="img fade"><img src="3.png" alt="Image 3"></div>
-                </div> -->
-              </div>
-        </div>
-            
-<!--CONTACT PAGE-->
-        <div  id="Contact">
-             <div class="contactContainer">
-                <a href="https://www.facebook.com/" img="6.png" alt="facebook logo"></a>
-                <a href="https://mail.google.com/"  img="7.png" alt="e-mail logo"></a>
-                <a href="https://messenger.com/" img="9.png" alt="messenger logo"></a>
+
+        <!-- Educational Background -->
+        <div id="EducBg">
+            <div class="elem">
+                <div class="elem-card-inner">
+                    <div class="elem-card-front">
+                        <img src="roms.jpg" alt="ROMS logo">
+                    </div>
+                    <div class="elem-card-back">
+                        <h2>Roman Ozaeta Memorial School</h2>
+                        <p>Elementary School</p>
+                        <p>2006-2014</p>
+                    </div>
+                </div>
+            </div>
                 
-             </div>
-          </div>
+            </div>
+            <div class="hs">
+                <div class="hs-card-inner">
+                    <div class="hs-card-front">
+                        <img src="sja.jpg" alt="Saint Joseph Academy logo">
+                    </div>
+                    <div class="hs-card-back">
+                        <h2>Saint Joseph Academy</h2>
+                        <p>Junior High School</p>
+                        <p>2014-2018</p>
+                    </div>
+                </div>
+            </div>
 
-    <!--JAVA-->
-            <!--FOR SIDEBAR BUTTON-->
-            <script>
-                    let bool = false;
-                function openNav() {
-                bool = !bool;
-                    if (bool) {
-                        document.getElementById("mySidebar").style.width = "150px";
-                        document.getElementById("main").style.marginLeft = "150px";
-                        document.querySelector(".openbtn").innerHTML = "&times;";
-                    } 
-                    else {
-                        document.getElementById("mySidebar").style.width = "0px";
-                        document.getElementById("main").style.marginLeft = "0";
-                        document.querySelector(".openbtn").innerHTML = "&#9776;";
-                    }
-                }
-
-            </script>
-        <!--JAVA FOR AUTOMATIC SLIDESHOW-->
-            <script>
-                let slideIndex = 0;
-                showSlides();
-
-                function showSlides() {
-                    let i;
-                    let slides = document.getElementsByClassName("img");
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}
-                    slides[slideIndex-1].style.display = "block";
-                    setTimeout(showSlides, 2000); // Change image every 2 seconds
-                }
-            </script>
-            <script>
-                var i = 0;
-                var text = " Hi! I am Odette Irish Santos. I'm an IT student! ♥";
-                var speed = 100;
-
-                function typeWriter(){
-                    if(i < text.length){
-                        document.getElementById("anime").innerHTML += text.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                    }
-                }
-        </script>
+            <div class="shs">
+                <div class="shs-card-inner">
+                    <div class="shs-card-front">
+                        <img src="sja.jpg" alt="Saint Joseph Academy logo">
+                    </div>
+                    <div class="shs-card-back">
+                        <h2>Saint Joseph Academy</h2>
+                        <p>Senior High School</p>
+                        <p>2018-2020</p>
+                    </div>
+                </div>
+            </div>
         </div>
-     </body>
+
+        <!-- Future goals
+        <div id="futureGoals" class="goalsContainer">
+            <div id="image1" class="img fade"><img src="" alt="Image 1"></div>
+            <div id="image2" class="img fade"><img src="" alt="Image 1"></div>
+            <div id="image3" class="img fade"><img src="" alt="Image 1"></div>
+            <div id="image4" class="img fade"><img src="" alt="Image 1"></div>
+        </div> -->
+
+        <!-- Contacts and Footer -->
+        <footer>
+            <div class="bottomNav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#EducBg">Educational Background</a></li>
+                <!-- <li><a href="#futureGoals">Future Goals</a></li> -->
+                <li><a href="#Contact">Contact</a></li>
+            </div>
+            <div>
+                <div id="Contact" class="contactContainer">
+                    <a href="https://www.facebook.com/"><img src="fb.png" alt="facebook"></a>
+                    <a href="https://mail.google.com/"><img src="mail.png" alt="gmail"></a>
+                    <a href="https://www.messenger.com/"><img src="msngr.png" alt="gmail"></a>
+                 </div>
+                <div class="footerAddress">
+                    <p>San Jose, Batangas</p>
+                    <p>Copyright 2023</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("imgpic");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+            
+            //Automatically types the strings in the span div 
+            var typed = new Typed(".autoType", {
+                strings: ["Odette Irish Santos", "a member of Iglesia Ni Cristo", "an IT student"],
+                typeSpeed: 120,
+                backSpeed: 100,
+                loop: true
+            })
+            
+        </script>
+
+
+    </body>
 </html>
