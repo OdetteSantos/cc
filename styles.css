@@ -1,0 +1,358 @@
+html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: tan;
+}
+
+*{
+  margin: 0 auto;
+}
+
+/* styling the name in home page */
+@font-face {
+  font-family: Alfa Slab One;
+  src: url(AlfaSlabOne-Regular.ttf);
+}
+
+#Home{
+  background-image: url("homeBg.png");
+  width: fit-content;
+}
+.container{
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+}
+
+.first{
+  font: 7em Alfa Slab One;
+  letter-spacing: 25px;
+  line-height: 1;
+  padding-top: 1cm;
+  padding-bottom: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.first1{
+  color: #e4d4c8;
+}
+
+.second{
+  color: #A47551;
+}
+
+h1 span{
+  text-shadow: 0 0 45px #684d38,
+              0 0 45px #684d38, 
+              0 0 45px #684d38,
+              -2px 2px 0 #A47551,
+                2px 2px 0 #A47551,
+                2px -2px 0 #A47551,
+              -2px -2px 0 #A47551;
+}
+
+/* styling surname*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
+
+.third{
+  font: 25px Playfair Display;
+  letter-spacing: 10px;
+  padding: 1%;
+}
+
+/* navigation bar styling*/
+#navContainer{
+  display: block;
+  border: 1px dashed black;
+  border-radius: 15px;
+  padding: 3px 3px;
+  background-color: #A47551;
+  overflow: hidden;
+}
+
+nav li{
+  display: inline-block;
+  justify-content: space-evenly;
+  color: black;
+  border: 1px solid #3d1f08;
+  padding: 2px;
+}
+
+nav a{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 2px 55px;
+  color: black;
+}
+
+nav a:hover{
+  background-color: #3d1f08;
+  color: #fff;
+}
+nav a:active{
+  color: #3d1f08;
+}
+nav a:visited{
+  color: beige;
+}
+
+/* Styling the About me section */
+.about{
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 5px;
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer, .pictureContainer{
+  padding: 15px 0;
+  margin: 2cm  20px .5cm .2cm;
+  margin-left: .8cm;
+}
+
+.textContainer{
+  width: 45%;
+  height: 80vh;
+  background-color: #b17140;
+  color: #2e1502;
+  border-radius: 3%;
+  border:5px outset white;
+  text-align: center;
+  overflow: hidden;
+  float: left;
+}
+
+.textContainer h3{
+  font-size: 2em;
+  margin-bottom: 0;
+  padding: 2px 2px 0 2px;
+  background-color: #b88158;
+  height: 70px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+h3 span{
+  color: #ffffff;
+  font-size: 1em;
+  max-width: 15px;
+  max-height: 45px;
+}
+
+/* Video adn Hobby Settings */
+.textContainer h4{
+  letter-spacing: 10px;
+  font-size: 2.2em;
+  margin: 1px 0 0 0;
+  padding-bottom: 0px;
+  padding-top: 0;
+}
+h4 .h4Ex{
+  color: #f3cc84;
+}
+.hobVid{
+  position: relative;
+  padding: 15px 0;
+}
+
+/* picture */
+.pictureContainer{
+  background-color: #523A28;
+  border: 5px dashed black;
+  border-radius: 25px;
+  box-sizing: border-box;
+  width: 35%;
+  height: 85vh;
+  position: relative;
+  margin: 2cm auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.imgpic{
+  display:none;
+  position: center;
+  padding: 0 10px 0px 20px;
+  height: 100;
+  margin: 0 auto;
+  width: 45%;
+} 
+
+/* picture transition */
+.fade{
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade{
+  from{opacity: .4}
+  to{opacity: 1}
+  }
+  
+/* @media screen and (max-width: 50%) {
+  .imgpic {
+    max-width: 1000px;
+    height: 100%;
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}*/
+
+/* educational background style */
+#EducBg{
+  margin: 0 auto;
+  margin-top: 15cm;
+}
+
+/* school logos height and width settings  */
+.elem img,
+.hs img,
+.shs img{
+  width: 100%;
+  height: auto;
+  border: 2px solid #2e1502;
+}
+
+/* educ bg div settings */
+.elem, .hs, .shs {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float: left;
+  padding: 5px;
+}
+#EducBg .elem, #EducBg .hs, #EducBg .shs{
+  content: "";
+  clear: both;
+  display: table; /*display pics side by side*/
+  margin-left: 1cm;
+}
+
+
+/* flip card transition */
+.elem-card-inner,
+.hs-card-inner,
+.shs-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.elem:hover .elem-card-inner,
+.hs:hover .hs-card-inner,
+.shs:hover .shs-card-inner {
+  transform: rotateY(180deg);
+}
+.elem-card-front, .elem-card-back,
+.hs-card-front, .hs-card-back,
+.shs-card-front, .shs-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.elem-card-front,
+.hs-card-front,
+.shs-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.elem-card-back,
+.hs-card-back,
+.shs-card-back {
+  background-color: #2980b9;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+
+/* card text style */
+.elem-card-back h2,
+.hs-card-back h2,
+.shs-card-back h2{
+  text-align: center;
+  padding: 50px 50px 15px 50px; /*t, r, b, l*/
+}
+
+
+/* footer style */
+footer{
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(167, 147, 121);
+  font-size: 15px;
+  padding-top: 12px;
+  margin-top: 1cm;
+  display: block;
+  float: right;
+}
+
+/* contacts style */
+.contactContainer{
+  width: 20%;
+  height: 75;
+  padding: 0;
+  margin: 0%;
+}
+footer img{
+  max-width: 50%;
+  height: 60px;
+  display: inline-block;
+}
+
+/* footer navigation style */
+footer li{
+  display: block;
+  text-align: center;
+  line-height: 1cm;
+  color: black;
+  border: 1px solid #3d1f08;
+  margin: 5px 0;
+}
+footer a{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 2px 55px;
+  color: black;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+footer a:active{
+  color: #3d1f08;
+}
+footer a:visited{
+  color: rgb(0, 0, 0);
+}
+
+.contactContainer, .bottomNav{
+  float: left;
+  margin: 0 10px 10px 10px;
+}
+
+/* footer text */
+.footerAddress{
+  padding: 15px 10px;
+  margin: 0;
+  float: left;
+}
+.footerAddress p{
+  font-size: 20;
+}
